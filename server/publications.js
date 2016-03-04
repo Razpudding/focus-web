@@ -1,3 +1,3 @@
-Meteor.publish('posts', function() {
-  return Posts.find();
+Meteor.publish('FocusSessions', function() {
+  return FocusSessions.find();
 });

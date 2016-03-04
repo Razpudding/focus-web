@@ -12,3 +12,6 @@ accounts-password
 ian:accounts-ui-bootstrap-3
 audit-argument-checks
 standard-minifiers
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
