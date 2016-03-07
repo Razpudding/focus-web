@@ -11,11 +11,15 @@ body {
   background: #eee;
   color: #666666; }
 
+html, body, #main, .container{
+  height: 100%;
+}  
+
 #main {
   position: relative;
 }
 .page {
-  position: absolute;
+  /*position: absolute;*/
   top: 0px;
   width: 100%;
 }

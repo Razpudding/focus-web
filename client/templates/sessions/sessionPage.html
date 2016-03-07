@@ -1,5 +1,16 @@
 <template name="sessionPage">
 	<div class="page">
-		{{> sessionElement}}
+		<article class="sessionElement">
+			{{> sessionElement}}
+			<ul>	
+			{{#each participants}}
+				<li>{{this}}</li>
+			{{/each}}
+			</ul>
+		</article>
+		{{#if preTestLink}}
+    	<iframe class="pretestFrame" id="iframe" src="{{preTestLink}}?embedded=true">Loading...</iframe>
+    	<!-- TODO Should move styling for iframes to CSS, really -->
+   		{{/if}}
 	</div>
 </template>

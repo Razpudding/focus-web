@@ -3,10 +3,5 @@
     <h3><a href="{{pathFor 'sessionPage'}}">{{type}}</a></h3>
     <p>Iteratie: {{iteration}}</p>
     <p>Datum: {{shortDate date}}</p>
-    <p>{{participants}}</p>
-    {{#if preTestLink}}
-    	<iframe src="{{preTestLink}}?embedded=true" width='760' height='500'>Loading...</iframe>
-    	<!-- TODO Should move styling for iframes to CSS, really -->
-    {{/if}}
   </div>
 </template>
