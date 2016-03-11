@@ -3,3 +3,4 @@ Template.sessionElement.helpers({
     return this.participants.length > 0 ? `participants: ${this.participants}` : '';
   }
 });
+
