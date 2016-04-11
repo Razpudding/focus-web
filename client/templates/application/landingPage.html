@@ -1,7 +1,24 @@
 <template name="landingPage">
-  <div class="landing">
-    {{> sessionList}}
-    {{> insertSessionForm}}
-  	<a href="{{pathFor 'admin'}}">Users,Abusers and Diffusers</a>
-  </div>
+	<div id="landing">
+		<h1>Welcome to the dangerzone</h1>
+		<section id="introtext">
+			<p>Our aim is to expose you to serious, life threatening danger. We believe this to be the best way to make you rethink
+		your priorities and focus on your studies. </p>
+			<p>Through our methods of
+			<ul>
+				<li>hard work</li> and
+				<li>inspiration</li>
+			</ul>
+			</p>
+			<p>We believe, we can save the world</p>
+		</section>
+		<section id="upcoming">
+		<h1>Upcoming Sessions</h1>
+		<p> The following is a list of upcoming session. Click on a session to find out more informotion about it. </p>
+		{{> sessionList}}
+		</section>
+	</div>
+	<footer>
+		<a href="{{pathFor 'admin'}}">Admin</a>
+	</footer>
 </template>

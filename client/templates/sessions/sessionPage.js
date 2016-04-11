@@ -5,7 +5,6 @@
 
 Template.sessionPage.events({
 	'click #aanmeldBtn': function(e){
-		console.log("here");
 		console.log("is this a sessionId? " + this._id);
 		Meteor.call('joinSession', this._id);
 	}

@@ -2,7 +2,7 @@
 	<div class="page">
 		<article class="sessionElement">
 			{{> sessionElement}}
-			<a id="aanmeldBtn" href="/aanmelden" class=btn-primary>aanmelden</a>
+			<a id="aanmeldBtn" href="" class=btn-primary>aanmelden</a>
 			<ul>	
 			{{#each participants}}
 				<li>{{this}}</li>
@@ -10,8 +10,8 @@
 			</ul>
 		</article>
 		{{#if preTestLink}}
-    	<iframe class="pretestFrame" id="iframe" src="{{preTestLink}}?embedded=true">Loading...</iframe>
-    	<!-- TODO Should move styling for iframes to CSS, really -->
+    		<iframe class="pretestFrame" id="iframe" src="{{preTestLink}}?embedded=true">Loading...</iframe>
+    		<!-- TODO Should move styling for iframes to CSS, really -->
    		{{/if}}
 	</div>
 </template>
