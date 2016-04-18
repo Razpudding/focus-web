@@ -1,3 +1,4 @@
+/*
 .main, .post, .comments li, .comment-form {
   background: #fff;
   border-radius: 3px;
@@ -29,7 +30,6 @@ footer {
 }
 
 .page {
-  /*position: absolute;*/
   top: 0px;
   width: 100%;
 }
@@ -37,6 +37,7 @@ footer {
 .navbar {
   margin-bottom: 10px; }
   /* line 32, ../sass/style.scss */
+  /*
   .navbar .navbar-inner {
     border-radius: 0px 0px 3px 3px; }
 
@@ -46,6 +47,7 @@ footer {
 .post {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
+  /*
   *zoom: 1;
   position: relative;
   opacity: 1; }
@@ -85,3 +87,4 @@ footer {
   margin-bottom: 5px;
   pointer-events: auto;
 }
+*/

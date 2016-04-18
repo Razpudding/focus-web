@@ -1,24 +1,27 @@
 <template name="landingPage">
-	<div id="landing">
-		<h1>Welcome to the dangerzone</h1>
+	<div id="landing" class="clear">
+		<h1 class="cover heading">Focus Sessions</h1>
+
 		<section id="introtext">
-			<p>Our aim is to expose you to serious, life threatening danger. We believe this to be the best way to make you rethink
-		your priorities and focus on your studies. </p>
-			<p>Through our methods of
-			<ul>
-				<li>hard work</li> and
-				<li>inspiration</li>
-			</ul>
+			<!-- Gebruik tekst lucas -->
+			<p>Become a more productive and satisfied student by taking part in our guided focus sessions</p>
+			<p>We have designed the ideal setting for focussing on your studies. In our sessions we offer the following
+				<ul>
+					<li>A social environment that inspires you to focus on your studies</li> 
+					<li>Techniques that help you handle distractions</li>
+					<li>A stable and sustainable working rythm with meaningful breaks</li>
+					<li>A scientific backed method adapted to your needs</li>
+					<li>Free lunch and unlimited coffee and tea</li>
+					<li>Because of our collaboration with the University we can offer study sessions at relatively low prices.</li>
+				</ul>
+				Focus Session has been developed the past half year and went through several iterations based on scientific research. Students who joined in our sessions reported they were productive for 90% of the time (as opposed to an average of 50% at home).
 			</p>
-			<p>We believe, we can save the world</p>
+			<p>Currently, we are focused on helping students who have become frustrated with studying because they're easily distracted</p>
 		</section>
 		<section id="upcoming">
-		<h1>Upcoming Sessions</h1>
-		<p> The following is a list of upcoming session. Click on a session to find out more informotion about it. </p>
-		{{> sessionList}}
+			<h1>Upcoming Sessions</h1>
+			<p> The following is a list of upcoming sessions. Click on a session to find out more informotion about it. </p>
+			{{> sessionList}}
 		</section>
 	</div>
-	<footer>
-		<a href="{{pathFor 'admin'}}">Admin</a>
-	</footer>
 </template>

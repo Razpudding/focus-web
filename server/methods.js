@@ -8,9 +8,8 @@ Meteor.methods({
     });
   },
   joinSession: function(sessionId) {
-    check(sessionId, String)
-    console.log("joinsession called for user: " + this.userId)
-    //let user = Meteor.users.find({_id:userId}).fetch();
+    check(sessionId, String);
+    console.log("joinsession called for user: " + this.userId);
     console.log(Meteor.users.update(this.userId, {$addToSet: {sessions: sessionId}}));
   }
 });

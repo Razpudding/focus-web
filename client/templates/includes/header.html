@@ -1,16 +1,14 @@
 <template name="header">
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <span class="sr-only">Toggle navigation</span>
-      <a class="navbar-brand" href="{{pathFor 'landingPage'}}">Focus Sessie</a>
+    <div class="inner">
+        <h3 class="masthead-brand" href="/">Focus Sessie</h3>
+        <nav>
+            <ul class="nav masthead-nav">
+                <li><a href="#upcoming">Upcoming</a></li> 
+                <li><a href="#footer">Contact</a></li> 
+                {{#if currentUser}}
+                    {{> loginButtons}}
+                {{/if}}
+            </ul>
+        </nav>
     </div>
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav">
-        {{#if currentUser}}{{/if}}
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        {{> loginButtons}}
-      </ul>
-    </div>
-  </nav>
 </template>
